@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://GregTerekhov.github.io/mimino-project",
+  "homepage": "https://sergionezhigay.github.io/07-1/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /mimino-project/"
+    "build": "parcel build src/*.html --public-url /07-1/"
   },
   "repository": {
     "type": "git",
