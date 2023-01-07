@@ -1,0 +1,116 @@
+// Текст документа. Загальні стилі
+.text {
+  @extend %marginPaddingReset;
+  font-family: $text-font-stack;
+  line-height: 1.219;
+  letter-spacing: 0.02em;
+
+  &--main {
+    font-size: 12px;
+    font-weight: 600;
+
+    @include respondTo('diapente') {
+      font-size: 16px;
+    }
+  }
+
+  // Текст сторінки amenities
+  &--room {
+    font-weight: 700;
+    font-size: 16px;
+    color: mix(white, getColor('primary'), 48%);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  // Текст сторінки hotel.html
+  &--rooms {
+    margin-bottom: 32px;
+    max-width: 258px;
+    color: #5f5f5f;
+
+    @include respondTo('diapente') {
+      max-width: 439px;
+    }
+
+    @include respondTo('diapason') {
+      color: #7a7a7a;
+      max-width: 400px;
+    }
+  }
+
+  &--rooms-right {
+    max-width: 242px;
+    margin-left: 70px; // перевірити (за макетом 98px - 15px падінг контейнеру)
+
+    @include respondTo('diapente') {
+      max-width: 400px;
+      margin-right: 38px; // перевірити - неправильне значення
+      margin-left: auto;
+      margin-bottom: 101px;
+    }
+
+    @include respondTo('diapason') {
+      margin-right: 110px;
+      margin-bottom: 120px;
+    }
+  }
+
+  // Перший текст-опис в секціях about на головній сторінці
+  &--about-first {
+    margin-bottom: 28px;
+    max-width: 258px;
+    color: mix(getColor('primary-inversed'), getColor('primary'), 37.3%);
+  
+    @include respondTo('diapente') {
+      max-width: 439px;
+      margin-bottom: 142px;
+    }
+  
+    @include respondTo('diapason') {
+      max-width: 518px;
+      margin-bottom: 162px;
+    }
+  }
+
+  // Другий текст-опис в секціях about на головній сторінці
+  &--about-second {
+    color: getColor('accent-darker');
+    max-width: 163px;
+    margin-left: 20px;
+  
+    @include respondTo('diapente') {
+      margin-top: 7px;
+      max-width: 312px;
+      margin-left: 48px;
+    }
+  
+    @include respondTo('diapason') {
+      margin-bottom: 40px;
+      max-width: 311px;
+      margin-left: 32px;
+    }
+  }
+
+  // Текст секцій details на головній сторінці
+  &--details {
+      color: scale-color(getColor('primary-inversed'), $blackness: 37%);
+  }
+
+  &--details-left {
+    max-width: 259px;
+
+    @include respondTo('diapente') {
+      max-width: 610px;
+    }
+  }
+
+  &--details-right {
+    max-width: 243px;
+    margin-left: auto;
+  
+    @include respondTo('diapente') {
+      max-width: 549px;
+    }
+  }
+}

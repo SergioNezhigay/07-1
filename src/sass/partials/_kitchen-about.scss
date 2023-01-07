@@ -1,0 +1,12 @@
+.kitchen-about {
+
+  @include respondTo('diapason') {
+    padding-bottom: 32px;
+  }
+}
+
+.kitchen-about__arrow {
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+}

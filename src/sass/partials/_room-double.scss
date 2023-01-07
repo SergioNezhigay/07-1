@@ -1,0 +1,10 @@
+.room-double__text {
+
+  @include respondTo('diapente') {
+    margin-bottom: 106px;
+  }
+
+  @include respondTo('diapente') {
+    margin-bottom: 154px;
+  }
+}

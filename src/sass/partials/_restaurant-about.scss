@@ -1,0 +1,6 @@
+.restaurant-about__logo {
+
+  @include respondTo('diapason') {
+    color: #828282;
+  }
+}

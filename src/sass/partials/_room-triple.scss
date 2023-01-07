@@ -1,0 +1,40 @@
+.room-triple {
+  background-color: #f0ecd6;
+}
+
+.room-triple__tagline {
+  margin-bottom: 8px;
+
+  @include respondTo('diapente') {
+    margin-right: 17px;
+  }
+
+  @include respondTo('diapason') {
+    margin-right: 57px;
+  }
+}
+
+.room-triple__brand {
+  text-align: right;
+  margin-right: -12px;
+
+  @include respondTo('diapente') {
+    margin-right: -3px;
+  }
+
+  @include respondTo('diapason') {
+    margin-right: 37px;
+  }
+}
+
+.room-triple__title {
+    text-align: right;
+
+  @include respondTo('diapente') {
+    margin-right: 43px;
+  }
+
+  @include respondTo('diapason') {
+    margin-right: 57px;
+  }
+}

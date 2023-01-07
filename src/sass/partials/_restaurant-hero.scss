@@ -1,0 +1,11 @@
+.restaurant-hero__title {
+  margin-bottom: 20px;
+
+  @include respondTo('diapente') {
+    margin-bottom: 16px;
+  }
+
+  @include respondTo('diapason') {
+    margin-bottom: 32px;
+  }
+}

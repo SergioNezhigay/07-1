@@ -1,0 +1,76 @@
+.header {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 16px;
+  left: 0;
+  z-index: 999;
+
+  @include respondTo('diapente') {
+    top: 24px;
+  }
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation-list {
+  display: flex;
+  gap: 20px;
+
+  @include respondTo('semiditonus') {
+    gap: 8px;
+  }
+
+  @include respondTo('diapente') {
+    gap: 72px;
+  }
+}
+
+.header__navigation-item {
+  gap: 6px;
+  @include respondTo('diapente') {
+    gap: 32px;
+  }
+}
+
+.header__department {
+
+  @include respondTo('semiditonus') {
+    font-size: 14px !important;
+  }
+}
+
+.header__navigation-wrap {
+  
+  @include respondTo('diapente') {
+    border: 1px solid mix(transparent, getColor('accent'), 30%);
+    @include transition(border, background-color);
+  
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid getColor('primary-inversed');
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+.header__navigation-icon {
+  fill: getColor('accent');
+  @include transition(fill);
+
+  .header__navigation-wrap:hover & {
+    fill: getColor('primary-inversed');
+  }
+}
+
+.header__navigation-number {
+
+  @include respondTo('tritonus') {
+    display: none;
+  }
+}

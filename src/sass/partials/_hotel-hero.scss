@@ -1,0 +1,17 @@
+.hotel-hero__title {
+  margin-bottom: 32px;
+}
+
+.hotel-hero__subtitle {
+  font-size: 20px;
+  margin-bottom: 178px;
+  color: getColor('primary-inversed');
+
+  @include respondTo('diapente') {
+    margin-bottom: 218px;
+  }
+
+  @include respondTo('diapason') {
+    margin-bottom: 242px;
+  }
+}

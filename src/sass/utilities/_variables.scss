@@ -1,0 +1,105 @@
+// Точки перелому
+$breakpoints: (
+  'semiditonus': (
+    max-width: 413px,
+  ),
+  'ditonus': (
+    min-width: 414px,
+  ),
+  'tritonus': (
+    max-width: 1023px,
+  ),
+  'diapente': (
+    min-width: 1024px,
+  ),
+  'heptachordium maius': (
+    max-width: 1279px,
+  ),
+  'diapason': (
+    min-width: 1280px,
+  ),
+) !default;
+
+// Кольори
+$cream-can: #f3c653;
+$buddha-gold: #c58e02; // darken(saturate(getColor('accent'), 11.05), 24.51)
+
+$island-spice: #fffdee; // darken(saturate(adjust-hue(getColor('primary-inversed'), 53), 100.00), 3.33)
+$aths-special: #f0ecd6; // darken(saturate(adjust-hue(getColor('primary-inversed'), 51), 46.43), 10.98)
+$eternity: #0E0C07; // lighten(saturate(adjust-hue(getColor('primary'), 43), 33.33), 4.12)
+
+$black: #000000;
+$tundora: #494848; // lighten(saturate(getColor('primary'), 0.69), 28.43)
+$scorpion: #5F5F5F; // lighten(getColor('primary'), 37.25)
+$boulder: #7A7A7A; // lighten(getColor('primary'), 47.84)
+
+$gray: #808080;
+
+$white: #ffffff;
+$old-lace: #FDFBEC; // darken(saturate(adjust-hue(getColor('primary-inversed'), 53), 80.95), 4.12)
+$mercury: #e5e5e5; // darken(getColor('primary-inversed') 10.20)
+$alto: #dadada; // darken(getColor('primary-inversed'), 14.51)
+$silver: #bababa; // darken(getColor('primary-inversed'), 27.06)
+$nobel: #B4B4B4; // darken(getColor('primary-inversed'), 29.41)
+
+// Мапи кольорів
+$colors: (
+  'accent': #f3c653,
+  'accent-darker': #c58e02,
+  'primary': #000000,
+  'primary-inversed': #ffffff,
+  'background': #fffdee,
+);
+
+//   'accent': (
+//     'base': $cream-can,
+//     'darker': $buddha-gold,
+//     'darker-a70': transparentize($buddha-gold, 0.7),
+//   ),
+//   'background': (
+//     'main': $island-spice,
+//     'dark': $aths-special,
+//     'darker': $eternity,
+//   ),
+//   'primary': (
+//     'base': $black,
+//     'base-a25': transparentize($black, 0.25)
+//     'base-a40': transparentize($black, 0.4),
+//     'base-a65': transparentize($black, 0.65),
+//     'base-a70': transparentize($black, 0.7),
+//     'base-a76': transparentize($black, 0.76),
+//     'decontrasted': $tundora,
+//     'light': $scorpion,
+//     'lighter': $boulder,
+//     'lighter-a40': transparentize($boulder, 0.4),
+//   ),
+//   'gray': $gray,
+//   'primary-inversed': (
+//     'base': $white,
+//     'decontrasted': $old-lace,
+//     'little-dark': $mercury,
+//     'medium-dark': $alto,
+//     'dark': $silver,
+//     'dark-a40': transparentize($silver, 0.4),
+//     'dark': $nobel, 
+//   )
+// );
+
+// Варіації кольорів 
+$variations: (
+  light: (function: lighten, parameters: 15%),
+  dark: (function: darken, parameters: 10%),
+  fade: (function: rgba, parameters: .7),
+  // gray: (function: grayscale),
+  // shade: (function: mix, parameters: white 80%)
+);
+
+// Шрифти
+$text-font-stack: 'Montserrat', sans-serif;
+
+$logo-font: 'Film P3', sans-serif;
+
+$text-times-font: 'Times New Roman', serif;
+
+// Кубік Без'є
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

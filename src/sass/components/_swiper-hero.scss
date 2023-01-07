@@ -1,0 +1,167 @@
+.swiper-hero .swiper-slide-next {
+  visibility: hidden;
+}
+
+.slide-hero {
+  padding-top: 471px;
+  padding-bottom: 165px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respondTo('diapente') {
+    padding-top: 468px;
+  }
+  @include respondTo('diapason') {
+    padding-top: 524px;
+  }
+
+  &--luxe {
+    @include respondTo('tritonus') {
+      padding-bottom: 133px;
+    }
+
+    @include backgroundImageRetina(
+      $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      $page: swiper,
+      $section: room,
+      $part: mobile,
+      $file: room-first-mob,
+      $webp-file: '../images/swiper/room/desktop/room-first-mob.webp'
+    );
+
+    @include respondTo('diapente') {
+      @include backgroundImageRetina(
+        $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        $page: swiper,
+        $section: room,
+        $part: tablet,
+        $file: room-first-tab,
+        $webp-file: '../images/hero/hotel/desktop/room-first-tab.webp'
+      );
+    }
+
+    @include respondTo('diapason') {
+      @include backgroundImageRetina(
+        $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        $page: swiper,
+        $section: room,
+        $part: desktop,
+        $file: room-first-desk,
+        $webp-file: '../images/hero/hotel/desktop/room-first-desk.webp'
+      );
+    }
+  }
+
+  &--triple {
+    @include backgroundImageRetina(
+      $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      $page: swiper,
+      $section: room,
+      $part: mobile,
+      $file: room-third-mob,
+      $webp-file: '../images/swiper/room/desktop/room-third-mob.webp'
+    );
+
+    @include respondTo('diapente') {
+      @include backgroundImageRetina(
+        $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        $page: swiper,
+        $section: room,
+        $part: tablet,
+        $file: room-third-tab,
+        $webp-file: '../images/hero/hotel/desktop/room-third-tab.webp'
+      );
+    }
+
+    @include respondTo('diapason') {
+      @include backgroundImageRetina(
+        $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        $page: swiper,
+        $section: room,
+        $part: desktop,
+        $file: room-third-desk,
+        $webp-file: '../images/hero/hotel/desktop/room-third-desk.webp'
+      );
+    }
+  }
+
+  &--double {
+    @include backgroundImageRetina(
+      $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      $page: swiper,
+      $section: room,
+      $part: mobile,
+      $file: room-second-mob,
+      $webp-file: '../images/swiper/room/desktop/room-second-desk.webp'
+    );
+
+    @include respondTo('diapente') {
+      @include backgroundImageRetina(
+        $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        $page: swiper,
+        $section: room,
+        $part: tablet,
+        $file: room-second-tab,
+        $webp-file: '../images/swiper/room/desktop/room-second-desk.webp'
+      );
+    }
+
+    @include respondTo('diapason') {
+      @include backgroundImageRetina(
+        $gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        $page: swiper,
+        $section: room,
+        $part: desktop,
+        $file: room-second-desk,
+        $webp-file: '../images/swiper/room/desktop/room-second-desk.webp'
+      );
+    }
+  }
+}
+
+.swiper-hero__arrows {
+  @extend %list;
+}
+
+.swiper-hero-button-next,
+.swiper-hero-button-prev {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  @extend %marginPaddingReset;
+  width: 40px;
+  height: 40px;
+  background-color: transparentize($color: getColor('primary'), $amount: 0.6);
+  fill: getColor('accent');
+  border: none;
+  @include transition(fill);
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: transparentize($color: getColor('accent'), $amount: 0.3);
+  }
+}
+
+.swiper-hero-button-next {
+  right: 15px;
+  @include respondTo('diapente') {
+    right: 47px;
+  }
+  @include respondTo('diapason') {
+    right: 85px;
+  }
+}
+
+.swiper-hero-button-prev {
+  left: 15px;
+  @include respondTo('diapente') {
+    left: 47px;
+  }
+  @include respondTo('diapason') {
+    left: 85px;
+  }
+}

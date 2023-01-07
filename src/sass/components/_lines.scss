@@ -1,0 +1,202 @@
+// Декоративні смужки
+.lines {
+    background-image: linear-gradient(
+    to right,
+    getColor('background') 34%,
+    rgba(186, 186, 186, 0.4) 34.1%,
+    rgba(186, 186, 186, 0.4) 34.2%,
+    getColor('background') 34.2%,
+    getColor('background') 66%,
+    rgba(186, 186, 186, 0.4) 66.1%,
+    rgba(186, 186, 186, 0.4) 66.2%,
+    getColor('background') 66.2%,
+    getColor('background') 100%
+  );
+
+  @include respondTo('diapente') {
+    background-image: linear-gradient(
+      to right,
+      getColor('background') 27.1%,
+      rgba(186, 186, 186, 0.4) 27.1%,
+      rgba(186, 186, 186, 0.4) 27.2%,
+      getColor('background') 27.2%,
+      getColor('background') 49.9%,
+      rgba(186, 186, 186, 0.4) 49.9%,
+      rgba(186, 186, 186, 0.4) 50%,
+      getColor('background') 50%,
+      getColor('background') 72.8%,
+      rgba(186, 186, 186, 0.4) 72.8%,
+      rgba(186, 186, 186, 0.4) 72.9%,
+      getColor('background') 72.9%,
+      getColor('background') 100%
+    );
+  }
+
+  @include respondTo('diapason') {
+    background-image: linear-gradient(
+      to right,
+      getColor('background') 26.4%,
+      rgba(186, 186, 186, 0.4) 26.4%,
+      rgba(186, 186, 186, 0.4) 26.5%,
+      getColor('background') 26.5%,
+      getColor('background') 49.9%,
+      rgba(186, 186, 186, 0.4) 49.9%,
+      rgba(186, 186, 186, 0.4) 50%,
+      getColor('background') 50%,
+      getColor('background') 73.5%,
+      rgba(186, 186, 186, 0.4) 73.5%,
+      rgba(186, 186, 186, 0.4) 73.6%,
+      getColor('background') 73.6%,
+      getColor('background') 100%
+    );
+  }
+}
+
+.lines-menu {
+  background-image: linear-gradient(
+    to right,
+    getColor('background') 34%,
+    rgba(186, 186, 186, 0.4) 34.1%,
+    rgba(186, 186, 186, 0.4) 34.2%,
+    getColor('background') 34.2%,
+    getColor('background') 66%,
+    rgba(186, 186, 186, 0.4) 66.1%,
+    rgba(186, 186, 186, 0.4) 66.2%,
+    getColor('background') 66.2%,
+    getColor('background') 100%
+  );
+
+  @include respondTo('diapente') {
+    background-image: linear-gradient(
+      to right,
+      #f0ecd6 27.1%,
+      rgba(186, 186, 186, 0.4) 27.1%,
+      rgba(186, 186, 186, 0.4) 27.2%,
+      #f0ecd6 27.2%,
+      #f0ecd6 49.9%,
+      rgba(186, 186, 186, 0.4) 49.9%,
+      rgba(186, 186, 186, 0.4) 50%,
+      #f0ecd6 50%,
+      #f0ecd6 72.8%,
+      rgba(186, 186, 186, 0.4) 72.8%,
+      rgba(186, 186, 186, 0.4) 72.9%,
+      #f0ecd6 72.9%,
+      #f0ecd6 100%
+    );
+  }
+
+  @include respondTo('diapason') {
+    background-image: linear-gradient(
+      to right,
+      #f0ecd6 26.4%,
+      rgba(186, 186, 186, 0.4) 26.4%,
+      rgba(186, 186, 186, 0.4) 26.5%,
+      #f0ecd6 26.5%,
+      #f0ecd6 49.9%,
+      rgba(186, 186, 186, 0.4) 49.9%,
+      rgba(186, 186, 186, 0.4) 50%,
+      #f0ecd6 50%,
+      #f0ecd6 73.5%,
+      rgba(186, 186, 186, 0.4) 73.5%,
+      rgba(186, 186, 186, 0.4) 73.6%,
+      #f0ecd6 73.6%,
+      #f0ecd6 100%
+    );
+  }
+}
+
+.lines-dark {
+  background-image: linear-gradient(
+    to right,
+    #f0ecd6 34%,
+    rgba(186, 186, 186, 0.4) 34.1%,
+    rgba(186, 186, 186, 0.4) 34.2%,
+    #f0ecd6 34.2%,
+    #f0ecd6 66%,
+    rgba(186, 186, 186, 0.4) 66.1%,
+    rgba(186, 186, 186, 0.4) 66.2%,
+    #f0ecd6 66.2%,
+    #f0ecd6 100%
+  );
+
+  @include respondTo('diapente') {
+    background-image: linear-gradient(
+      to right,
+      #f0ecd6 27.1%,
+      rgba(186, 186, 186, 0.4) 27.1%,
+      rgba(186, 186, 186, 0.4) 27.2%,
+      #f0ecd6 27.2%,
+      #f0ecd6 49.9%,
+      rgba(186, 186, 186, 0.4) 49.9%,
+      rgba(186, 186, 186, 0.4) 50%,
+      #f0ecd6 50%,
+      #f0ecd6 72.8%,
+      rgba(186, 186, 186, 0.4) 72.8%,
+      rgba(186, 186, 186, 0.4) 72.9%,
+      #f0ecd6 72.9%,
+      #f0ecd6 100%
+    );
+  }
+
+  @include respondTo('diapason') {
+    background-image: linear-gradient(
+      to right,
+      #f0ecd6 26.4%,
+      rgba(186, 186, 186, 0.4) 26.4%,
+      rgba(186, 186, 186, 0.4) 26.5%,
+      #f0ecd6 26.5%,
+      #f0ecd6 49.9%,
+      rgba(186, 186, 186, 0.4) 49.9%,
+      rgba(186, 186, 186, 0.4) 50%,
+      #f0ecd6 50%,
+      #f0ecd6 73.5%,
+      rgba(186, 186, 186, 0.4) 73.5%,
+      rgba(186, 186, 186, 0.4) 73.6%,
+      #f0ecd6 73.6%,
+      #f0ecd6 100%
+    );
+  }
+}
+
+.lines-footer {
+  background-image: 
+  linear-gradient(
+    to right,
+    #0e0c07 63.5%,
+    rgba(122, 122, 122, 0.4) 63.5%,
+    rgba(122, 122, 122, 0.4) 63.6%,
+    #0e0c07 63.6%,
+    #0e0c07 100%,
+  );
+
+  @include respondTo('diapente') {
+    background-image: 
+    linear-gradient(
+      to right,
+      #0e0c07 49.9%,
+      rgba(122, 122, 122, 0.4) 49.9%,
+      rgba(122, 122, 122, 0.4) 50%,
+      #0e0c07 50%,
+      #0e0c07 73.1%,
+      rgba(122, 122, 122, 0.4) 73.1%,
+      rgba(122, 122, 122, 0.4) 73.2%,
+      #0e0c07 73.2%,
+      #0e0c07 100%,
+    );
+  }
+
+  @include respondTo('diapason') {
+    background-image: linear-gradient(
+      to right,
+      #0e0c07 49.9%,
+      rgba(122, 122, 122, 0.4) 49.9%,
+      rgba(122, 122, 122, 0.4) 50%,
+      #0e0c07 50%,
+      #0e0c07 73.5%,
+      rgba(122, 122, 122, 0.4) 73.5%,
+      rgba(122, 122, 122, 0.4) 73.6%,
+      #0e0c07 73.6%,
+      #0e0c07 100%
+    );
+  }
+}

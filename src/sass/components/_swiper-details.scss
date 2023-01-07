@@ -1,0 +1,96 @@
+// Свайпер секцій details головної сторінки
+.swiper-container {
+  &--interactive {
+    @include respondTo('tritonus') {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.swiper-details {
+  max-width: 374px;
+  width: 100%;
+  overflow: hidden;
+
+  @include respondTo('semiditonus') {
+    max-width: 320px;
+  }
+
+  @include respondTo('diapente') {
+    max-width: 662px;
+  }
+
+  @include respondTo('diapason') {
+    max-width: 875px;
+  }
+
+  &--right {
+    @include respondTo('tritonus') {
+      margin-left: auto;
+    }
+  }
+
+  &--left {
+    @include respondTo('tritonus') {
+      margin-right: auto;
+    }
+  }
+}
+
+.swiper1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide.swiper-slide-prev {
+  width: 270px;
+}
+
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next {
+  visibility: visible;
+}
+
+.swiper-slide {
+  visibility: hidden;
+  text-align: center;
+  font-size: 18px;
+  background: rgb(192, 188, 188);
+  height: 270px;
+  width: 162px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper {
+  height: 100%;
+}
+
+.mySwiper {
+  width: calc(270px + 162px + 162px + 3 * 34px);
+  height: auto;
+}
+
+.swiper-wrapper {
+  left: 54px;
+}
